@@ -1,0 +1,13 @@
+{
+  "name": "friend-finder",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:nmetzger1/friend-finder.git",
+  "author": "Nick <numbnick2@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "express": "^4.15.2",
+    "path": "^0.12.7"
+  }
+}
