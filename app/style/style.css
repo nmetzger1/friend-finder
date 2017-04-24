@@ -1,0 +1,16 @@
+.background-bar{
+    background-image: url("images/friends.jpeg");
+    background-size: 100%;
+    width: 100%;
+    padding: 3% 0;
+}
+
+.form-dropdown{
+    width: 20%;
+}
+
+#friend-name{
+    font-size: xx-large;
+    font-weight: bold;
+    color: #ff8d43;
+}

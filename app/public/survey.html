@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Friend Finder Quiz</title>
+
+    <!--Bootstrap / CSS Files-->
+    <!--CSS Reset-->
+    <link rel="stylesheet" href="../style/reset.css">
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <!--Custom CSS-->
+    <link rel="stylesheet" href="../style/style.css">
+
+
+</head>
+<body>
+
+<div class="container">
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h2 class="panel-title">Take the quiz. Find a friend.</h2>
+        </div>
+        <div class="panel-body">
+            <form>
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="img-url">Share an Image of Yourself (Enter a URL)</label>
+                    <input type="text" id="img-url" class="form-control">
+                </div>
+
+                <!--Survey Questions-->
+                <!--Survey Question 1-->
+                <div class="form-group">
+                    <label for="question1">If I were a type of tree I'd be a..</label>
+                    <select class="form-control form-dropdown" id="question1">
+                        <option></option>
+                        <option>Giant Sequoia</option>
+                        <option>Rubber</option>
+                        <option>Bay Laurel</option>
+                        <option>Beech</option>
+                        <option>Pistachio</option>
+                    </select>
+                </div>
+                <!--Survey Question 2-->
+                <div class="form-group">
+                    <label for="question2">On a scale of 1 to 5, how evil was the Empire in Star Wars?</label>
+                    <select class="form-control form-dropdown" id="question2">
+                        <option></option>
+                        <option>1 (They were just trying to keep the peace)</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5 (I had family on Alderaan)</option>
+                    </select>
+                </div>
+                <!--Survey Question 3-->
+                <div class="form-group">
+                    <label for="question3">How many Michael Bolton songs can you name off the top of your head?</label>
+                    <select class="form-control form-dropdown" id="question3">
+                        <option></option>
+                        <option>0</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>I celebrate the guy's entire catalog</option>
+                    </select>
+                </div>
+                <!--Survey Question 4-->
+                <div class="form-group">
+                    <label for="question4">How many marshmallows can you fit in your mouth at one time?</label>
+                    <select class="form-control form-dropdown" id="question4">
+                        <option></option>
+                        <option>1-3</option>
+                        <option>4-6</option>
+                        <option>6-10</option>
+                        <option>10-15</option>
+                        <option>16+</option>
+                    </select>
+                </div>
+                <!--Survey Question 5-->
+                <div class="form-group">
+                    <label for="question5">Please select the number 3</label>
+                    <select class="form-control form-dropdown" id="question5">
+                        <option></option>
+                        <option>You can't tell me what to do</option>
+                        <option>No.</option>
+                        <option>3</option>
+                        <option>I make my own rules</option>
+                        <option>Three.</option>
+                    </select>
+                </div>
+                <!--Survey Question 6-->
+                <div class="form-group">
+                    <label for="question6">How many tacos have you eaten in the past week and a half?</label>
+                    <select class="form-control form-dropdown" id="question6">
+                        <option></option>
+                        <option>0</option>
+                        <option>1-3</option>
+                        <option>4-6</option>
+                        <option>6-7</option>
+                        <option>More than 8</option>
+                    </select>
+                </div><!--Survey Question 7-->
+                <div class="form-group">
+                    <label for="question7">My ideal medieval occupation would be..</label>
+                    <select class="form-control form-dropdown" id="question7">
+                        <option></option>
+                        <option>Collier</option>
+                        <option>Tanner</option>
+                        <option>Cooper</option>
+                        <option>Fletcher</option>
+                        <option>Lutenist</option>
+                    </select>
+                </div>
+                <!--Survey Question 8-->
+                <div class="form-group">
+                    <label for="question8">I have strong feelings regarding Oxford commas.</label>
+                    <select class="form-control form-dropdown" id="question8">
+                        <option></option>
+                        <option>1 (Strongly Disagree)</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5 (Strongly Agree)</option>
+                    </select>
+                </div>
+                <!--Survey Question 9-->
+                <div class="form-group">
+                    <label for="question9">What is the highest number you can count to on one hand?</label>
+                    <select class="form-control form-dropdown" id="question9">
+                        <option></option>
+                        <option>0-1</option>
+                        <option>2-3</option>
+                        <option>3-4</option>
+                        <option>5</option>
+                        <option>6+</option>
+                    </select>
+                </div>
+                <!--Survey Question 10-->
+                <div class="form-group">
+                    <label for="question10">I can't think of any more questions, please select any answer</label>
+                    <select class="form-control form-dropdown" id="question10">
+                        <option></option>
+                        <option>1 (Strongly Disagree)</option>
+                        <option>Boise, Idaho</option>
+                        <option>War and Peace</option>
+                        <option>Existentialism</option>
+                        <option>Napoleon Dynamite</option>
+                    </select>
+                </div>
+                <!--END of Survey Questions-->
+                <button type="submit" class="btn btn-default" id="submitBtn">Submit Answers</button>
+                <div class="errorText"></div>
+            </form>
+        </div>
+    </div>
+
+    <!--Friend Modal-->
+    <div class="modal fade" id="friendModal" tabindex="-1" role="dialog" aria-labelledby="friendModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <h4 class="modal-title" id="friendModalLabel"></h4>
+                </div>
+                <div class="modal-body">
+                    <div class="friendImg"></div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--End of Friend Modal-->
+
+</div>
+
+<script type="text/javascript">
+    $("#submitBtn").on("click", function (event) {
+        event.preventDefault();
+
+        //validate form
+        var isFormValid = true;
+
+        $(".form-control").each(function () {
+            var userResponse = $(this).val().trim();
+
+            if(userResponse === ""){
+                isFormValid = false;
+            }
+        });
+
+        //If form is valid, store responses
+        if(isFormValid){
+            var userResponseObject = {
+                name: $("#name").val().trim(),
+                image: $("#img-url").val().trim(),
+                answers: [$("#question1").val(),$("#question2").val(),$("#question3").val(),$("#question4").val(),$("#question5").val(),$("#question6").val(),$("#question7").val(),$("#question8").val(),$("#question9").val(),$("#question10").val()]
+            };
+
+            //Clean up error text if any exists
+            $(".errorText").html("");
+
+            //Send user response to friend api
+            $.post("/api/friends", userResponseObject)
+                .done(function (data) {
+
+                    //Parse data as JSON object
+                    var friendData = JSON.parse(data);
+
+                    //Update friend modal HTML
+                    $("#friendModalLabel").html("Meet your new friend, <span id='friend-name'>" + friendData.name + "</span>");
+                    $(".friendImg").html('<img src="' + friendData.img + '">');
+
+                    //Display Modal
+                    $('#friendModal').modal('show');
+                })
+        }
+        //If form is NOT valid, add error message to dom.
+        else {
+            $(".errorText").html("<h3 style='color: red'>Please answer all questions before selecting Submit</h3>");
+        }
+    })
+</script>
+</body>
+</html>
