@@ -10,13 +10,17 @@ module.exports = function (app) {
     //routes to survey page
     app.get("/survey", function (req, res) {
         res.sendFile(path.join(__dirname, "../public/survey.html"));
-    })
+    });
 
     app.get("/style/reset.css", function (req, res) {
-        res.sendFile(path.join(__dirname, "../style/reset.css"))
-    })
+        res.sendFile(path.join(__dirname, "../style/reset.css"));
+    });
 
     app.get("/style/style.css", function (req, res) {
-        res.sendFile(path.join(__dirname, "../style/style.css"))
+        res.sendFile(path.join(__dirname, "../style/style.css"));
+    });
+
+    app.get("/style/images/friends.jpeg", function (req,res) {
+        res.sendFile(path.join(__dirname, "../style/images/friends.jpeg"));
     })
 };
