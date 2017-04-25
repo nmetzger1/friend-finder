@@ -12,7 +12,7 @@ app.use(bodyParser.text());
 app.use(bodyParser.json({ type: "application/vnd.api+json" }));
 
 //set PORT
-var PORT = 3000;
+var PORT = process.env.PORT || 8080;
 
 //point server to route files
 //html routing
