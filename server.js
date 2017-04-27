@@ -17,11 +17,12 @@ app.use(express.static(path.join(__dirname, '/app/public')));
 var PORT = process.env.PORT || 8080;
 
 //point server to route files
+//api routing
+require("./app/routing/apiRoutes.js")(app);
+
 //html routing
 require("./app/routing/htmlRoutes.js")(app);
 
-//api routing
-require("./app/routing/apiRoutes.js")(app);
 
 //star listener
 app.listen(PORT, function () {

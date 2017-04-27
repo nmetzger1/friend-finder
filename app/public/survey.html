@@ -212,11 +212,11 @@
             //Clean up error text if any exists
             $(".errorText").html("");
 
+            console.log(userResponseObject);
+
             //Send user response to friend api
             $.post("/api/friends", userResponseObject)
                 .done(function (data) {
-
-                    console.log(data);
 
                     //Parse data as JSON object
                     var friendData = JSON.parse(data);

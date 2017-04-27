@@ -35,7 +35,6 @@ var compareAnswers = function (array1, array2) {
 
     for(var i = 0; i < array1.length; i++){
         compatibilityScore += Math.abs(array1[i] - array2[i]);
-        console.log("Score", compatibilityScore);
     }
 
     return compatibilityScore;
@@ -44,12 +43,10 @@ var compareAnswers = function (array1, array2) {
 
 module.exports = function (app) {
     app.get("/api/friends", function (req, res) {
-        console.log("get");
         res.end(JSON.stringify(friendsList));
     });
 
     app.post("/api/friends", function (req, res) {
-        console.log("post");
         var bestMatch;
         var bestMatchScore = 100;
 
@@ -59,7 +56,6 @@ module.exports = function (app) {
         //loop through all answers
         for(var i = 0; i < friendsList.length; i++){
 
-            console.log("Friend Name", friendsList[i].name);
             var friendAnswers = convertArray(friendsList[i].answers);
 
             //determine compatibility
