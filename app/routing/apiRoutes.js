@@ -44,11 +44,12 @@ var compareAnswers = function (array1, array2) {
 
 module.exports = function (app) {
     app.get("/api/friends", function (req, res) {
+        console.log("get");
         res.end(JSON.stringify(friendsList));
     });
 
     app.post("/api/friends", function (req, res) {
-
+        console.log("post");
         var bestMatch;
         var bestMatchScore = 100;
 

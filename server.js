@@ -1,6 +1,7 @@
 //required modules / packages
 var express = require("express");
 var bodyParser = require("body-parser");
+var path = require("path");
 
 //declare express variable
 var app = express();
@@ -10,6 +11,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.text());
 app.use(bodyParser.json({ type: "application/vnd.api+json" }));
+app.use(express.static(path.join(__dirname, '/app/public')));
 
 //set PORT
 var PORT = process.env.PORT || 8080;
@@ -20,7 +22,6 @@ require("./app/routing/htmlRoutes.js")(app);
 
 //api routing
 require("./app/routing/apiRoutes.js")(app);
-
 
 //star listener
 app.listen(PORT, function () {
